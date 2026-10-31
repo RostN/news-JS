@@ -20,6 +20,7 @@ const baseConfig = {
                         loader: 'ts-loader',
                         options: {
                             compiler: require.resolve('typescript'),
+                            configFile: path.resolve(__dirname, 'tsconfig.json'),
                         },
                     },
                 ],
