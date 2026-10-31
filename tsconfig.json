@@ -6,7 +6,8 @@
     // "outDir": "./dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "target": "esnext",
     "types": ["node"],
     // For nodejs:
@@ -31,7 +32,7 @@
     "strict": true,
     "noImplicitAny": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    // "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",

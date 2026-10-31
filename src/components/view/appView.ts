@@ -1,6 +1,6 @@
-import News from './news/news.js';
-import Sources from './sources/sources.js';
-import type { INewsResponse, ISourcesResponse } from '../../types/index.js';
+import News from './news/news';
+import Sources from './sources/sources';
+import type { INewsResponse, ISourcesResponse } from '../../types/index';
 
 export class AppView {
     private news: News;

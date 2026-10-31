@@ -1,5 +1,5 @@
-import AppLoader from './appLoader.js';
-import type { INewsResponse, ISourcesResponse } from '../../types/index.js';
+import AppLoader from './appLoader';
+import type { INewsResponse, ISourcesResponse } from '../../types/index';
 
 class AppController extends AppLoader {
     public getSources(callback: (data: ISourcesResponse) => void): void {
