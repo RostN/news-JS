@@ -13,17 +13,12 @@ const baseConfig = {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
-            {
+                        {
                 test: /\.tsx?$/,
-                use: [
-                    {
-                        loader: 'ts-loader',
-                        options: {
-                            compiler: require.resolve('typescript'),
-                            configFile: path.resolve(__dirname, 'tsconfig.json'),
-                        },
-                    },
-                ],
+                loader: 'esbuild-loader',
+                options: {
+                    target: 'es2022', // спецификация из вашего tsconfig
+                },
                 exclude: /node_modules/,
             },
         ],
