@@ -4,6 +4,21 @@ body {
     font-family: sans-serif;
 }
 
+/* Скрываем вертикальный скроллбар для Chrome, Safari и Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Скрываем вертикальный скроллбар для IE, Edge и Firefox */
+html,
+body,
+main {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 header {
     padding: 10px 30px;
 }
