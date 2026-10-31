@@ -15,7 +15,14 @@ const baseConfig = {
             },
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
+                use: [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            compiler: require.resolve('typescript'),
+                        },
+                    },
+                ],
                 exclude: /node_modules/,
             },
         ],
