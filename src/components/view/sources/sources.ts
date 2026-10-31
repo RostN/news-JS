@@ -1,4 +1,4 @@
-import type { INewsSource } from '../../../types/index.js';
+import type { INewsSource } from '../../../types/index';
 import './sources.css';
 
 class Sources {

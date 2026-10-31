@@ -1,4 +1,4 @@
-import type { INewsArticle } from '../../../types/index.js';
+import type { INewsArticle } from '../../../types/index';
 import './news.css';
 
 class News {
