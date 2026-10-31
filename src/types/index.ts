@@ -1,11 +1,11 @@
 export interface INewsSource {
     id: string | null;
     name: string;
-    description?: string;
-    url?: string;
-    category?: string;
-    language?: string;
-    country?: string;
+    description: string;
+    url: string;
+    category: string;
+    language: string;
+    country: string;
 }
 
 export interface ISourcesResponse {
