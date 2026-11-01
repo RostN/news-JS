@@ -33,6 +33,41 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+
+    .myFooterBlock{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .svgImg {
+            stroke: white;
+            fill: white;
+            transform: translateY(10px);
+            margin-right: 5px;
+        }
+      
+        .svgText {
+            color: white;
+            text-decoration: none;
+            transform: translateY(-10px);
+        }
+
+        img {
+            background-color: transparent;
+            filter: invert(1);
+        }
+
+        img:hover {
+            filter: invert(1) brightness(2) drop-shadow(0 0 0.5em #3fcc59);
+        }
+ 
+        .svgText:hover {
+            filter: drop-shadow(0 0 0.5em #3fcc59);
+        }
+    }
+
 }
 footer .copyright {
     font-size: 14px;
