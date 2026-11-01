@@ -1,11 +1,12 @@
 {
     "name": "NewsJS",
+    "type": "module",
     "version": "1.0.0",
     "description": "",
     "main": "webpack.base.config.js",
     "scripts": {
-        "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
-        "build": "webpack --config ./webpack.config.js --env mode=prod",
+        "start": "webpack serve --open --config ./webpack.config.cjs --env mode=dev",
+        "build": "webpack --config ./webpack.config.cjs --env mode=prod",
         "lint": "eslint . --ext .ts"
     },
     "repository": {
@@ -17,10 +18,14 @@
     "license": "ISC",
     "homepage": "",
     "devDependencies": {
+        "@types/node": "^26.6.6",
+        "@typescript-eslint/eslint-plugin": "^8.72.1",
+        "@typescript-eslint/parser": "^8.72.1",
         "clean-webpack-plugin": "^4.0.0",
         "copy-webpack-plugin": "^12.0.2",
         "css-loader": "^6.10.0",
         "dotenv-webpack": "^8.0.1",
+        "esbuild-loader": "^4.5.0",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-import": "^2.29.1",
@@ -28,6 +33,9 @@
         "html-webpack-plugin": "^5.6.0",
         "prettier": "3.2.5",
         "style-loader": "^3.3.4",
+        "ts-loader": "^9.6.2",
+        "typescript": "^7.0.2",
+        "typescript-eslint": "^8.72.1",
         "webpack": "^5.90.1",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^5.0.0",
